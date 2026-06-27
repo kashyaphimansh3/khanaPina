@@ -1,0 +1,84 @@
+.login{
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    border:2px solid #FF6B35;
+
+    background:white;
+
+    color:#FF6B35;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+}
+
+.login:hover{
+
+    background:#FF6B35;
+
+    color:white;
+}
+
+.signup{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#FF6B35;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.signup:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 25px rgba(255,107,53,.35);
+}
+.primary-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 32px;
+    border:none;
+    border-radius:50px;
+    background:var(--primary);
+    color:#fff;
+    font-weight:600;
+    font-size:16px;
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(255,107,53,.25);
+}
+
+.secondary-btn{
+    padding:16px 32px;
+    border-radius:50px;
+    border:2px solid var(--primary);
+    background:#fff;
+    color:var(--primary);
+    font-weight:600;
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+    background:var(--primary);
+    color:#fff;
+}
