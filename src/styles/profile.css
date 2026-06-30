@@ -1,0 +1,281 @@
+/* ===========================
+   PROFILE PAGE
+=========================== */
+
+.profile-page{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:40px;
+    padding:50px 0;
+    align-items:start;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.profile-sidebar{
+
+    background:#fff;
+    border-radius:24px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    position:sticky;
+    top:100px;
+
+}
+
+.profile-avatar{
+
+    font-size:120px;
+    color:#FF6B35;
+    margin-bottom:20px;
+
+}
+
+.profile-sidebar h2{
+
+    font-size:28px;
+    margin-bottom:8px;
+    color:#222;
+
+}
+
+.profile-sidebar p{
+
+    color:#777;
+    margin-bottom:30px;
+
+}
+
+.edit-btn{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#FF6B35;
+    color:white;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#eb5c27;
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   RIGHT
+=========================== */
+
+.profile-content{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.profile-card{
+
+    background:#fff;
+    border-radius:22px;
+    padding:30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.profile-card:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.profile-card h2{
+
+    margin-bottom:22px;
+    color:#222;
+    font-size:28px;
+
+}
+
+/* ===========================
+   INFO
+=========================== */
+
+.info-row{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:18px;
+    color:#555;
+    font-size:17px;
+
+}
+
+.info-row svg{
+
+    color:#FF6B35;
+    font-size:20px;
+
+}
+
+/* ===========================
+   ACTIONS
+=========================== */
+
+.action-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+
+}
+
+.action-card{
+
+    background:#FFF8F5;
+    border:2px solid transparent;
+    border-radius:18px;
+    padding:30px 20px;
+    text-align:center;
+    text-decoration:none;
+    color:#222;
+    transition:.3s;
+
+}
+
+.action-card:hover{
+
+    border-color:#FF6B35;
+    transform:translateY(-4px);
+
+}
+
+.action-card svg{
+
+    font-size:38px;
+    color:#FF6B35;
+    margin-bottom:15px;
+
+}
+
+.action-card span{
+
+    display:block;
+    font-size:17px;
+    font-weight:600;
+
+}
+
+/* ===========================
+   LOGOUT
+=========================== */
+
+.logout-btn{
+
+    width:100%;
+    padding:18px;
+    background:#EF4444;
+    color:white;
+    border:none;
+    border-radius:16px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.profile-page{
+
+grid-template-columns:1fr;
+
+}
+
+.profile-sidebar{
+
+position:static;
+
+}
+
+.action-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.profile-sidebar{
+
+padding:30px 20px;
+
+}
+
+.profile-avatar{
+
+font-size:90px;
+
+}
+
+.profile-card{
+
+padding:22px;
+
+}
+
+.profile-card h2{
+
+font-size:24px;
+
+}
+
+.info-row{
+
+font-size:15px;
+
+}
+
+.logout-btn{
+
+font-size:16px;
+
+}
+
+}

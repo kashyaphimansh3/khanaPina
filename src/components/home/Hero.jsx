@@ -11,7 +11,6 @@ import "../../styles/hero.css";
 function Hero() {
   return (
     <section className="hero">
-
       <div className="container hero-container">
 
         {/* LEFT */}
@@ -22,9 +21,8 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-
           <span className="tag">
-            🍔 India's Favourite Food Delivery
+            🍛 KhanaPina • India's Favourite Food Delivery
           </span>
 
           <h1>
@@ -42,7 +40,6 @@ function Hero() {
           </p>
 
           <div className="hero-buttons">
-
             <button className="primary-btn">
               Order Now
               <FaArrowRight />
@@ -51,54 +48,42 @@ function Hero() {
             <button className="secondary-btn">
               Explore Menu
             </button>
-
           </div>
 
           <div className="hero-search">
-
             <FaSearch />
 
             <input
               type="text"
               placeholder="Search burgers, pizza, biryani..."
             />
-
           </div>
 
           <div className="hero-stats">
-
             <div>
-
               <FaStar />
 
               <h3>4.9</h3>
 
               <p>Rating</p>
-
             </div>
 
             <div>
-
               <FaMotorcycle />
 
               <h3>20 min</h3>
 
               <p>Delivery</p>
-
             </div>
 
             <div>
-
               🍽️
 
               <h3>500+</h3>
 
               <p>Restaurants</p>
-
             </div>
-
           </div>
-
         </motion.div>
 
         {/* RIGHT */}
@@ -109,35 +94,24 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-
-          <div className="burger-circle">
-
-            🍔
-
+          <div className="hero-icon">
+            🍛
           </div>
 
           <div className="floating-card top">
-
             🚴 Fast Delivery
-
           </div>
 
           <div className="floating-card middle">
-
             ⭐ Trusted by 30K+
-
           </div>
 
           <div className="floating-card bottom">
-
             🎁 Flat 40% OFF
-
           </div>
-
         </motion.div>
 
       </div>
-
     </section>
   );
 }

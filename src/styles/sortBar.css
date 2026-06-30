@@ -1,0 +1,49 @@
+.sort-section{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:5px;
+
+}
+
+.sort-right select{
+
+padding:15px 15px;
+border-radius:15px;
+border:1px solid #ddd;
+font-size:15px;
+cursor:pointer;
+outline:none;
+
+}
+
+.sort-right select:focus{
+
+border-color:#FF6B35;
+
+}
+
+@media(max-width:768px){
+
+.sort-section{
+
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+
+}
+
+.sort-right{
+
+width:100%;
+
+}
+
+.sort-right select{
+
+width:100%;
+
+}
+
+}

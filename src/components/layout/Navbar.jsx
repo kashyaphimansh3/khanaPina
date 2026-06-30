@@ -1,80 +1,158 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSearch } from "../../context/SearchContext";
 import {
-    FaShoppingCart,
-    FaHeart,
-    FaSearch,
-    FaBars
+  FaShoppingCart,
+  FaHeart,
+  FaSearch,
+  FaBars,
+  FaTimes,
+  FaUserCircle,
 } from "react-icons/fa";
 
+import { useCart } from "../../context/CartContext";
 import "../../styles/navbar.css";
 
-function Navbar(){
+function Navbar() {
+  const { cart } = useCart();
+  const { searchTerm, setSearchTerm } = useSearch();
 
-    return(
+  const [menuOpen, setMenuOpen] = useState(false);
 
-        <header className="navbar">
+  return (
+    <header className="navbar">
 
-            <div className="container nav-container">
+      <div className="container nav-container">
 
-                <Link to="/" className="logo">
+        {/* Logo */}
 
-                    🍔 QuickBite
+        <Link to="/" className="logo">
 
-                </Link>
+          🍛 <span>KhanaPina</span>
 
-                <nav className="nav-links">
+        </Link>
 
-                    <Link to="/">Home</Link>
+        {/* Navigation */}
 
-                    <Link to="/">Restaurants</Link>
+        <nav className={menuOpen ? "nav-links active" : "nav-links"}>
 
-                    <Link to="/">Offers</Link>
+          <Link to="/">Home</Link>
 
-                    <Link to="/">About</Link>
+          <Link to="/">Restaurants</Link>
 
-                    <Link to="/">Contact</Link>
+          <Link to="/">Offers</Link>
 
-                </nav>
+          <Link to="/orders">My Orders</Link>
 
-                <div className="nav-right">
+          <Link to="/about">About</Link>
 
-                    <div className="search-box">
+        </nav>
 
-                        <FaSearch/>
+        {/* Right Side */}
 
-                        <input
-                            type="text"
-                            placeholder="Search food..."
-                        />
+        <div className="nav-right">
 
-                    </div>
+          {/* Search */}
 
-                    <FaHeart className="icon"/>
+          <div className="search-box">
 
-                    <FaShoppingCart className="icon"/>
+            <FaSearch className="search-icon"/>
 
-                    <button className="login-btn">
+            <input
+    type="text"
+    placeholder="Search restaurants..."
+    value={searchTerm}
+    onChange={(e) =>
+        setSearchTerm(e.target.value)
+    }
+/>
 
-                        Login
+          </div>
 
-                    </button>
+          {/* Wishlist */}
 
-                    <button className="signup-btn">
+          <Link
+            to="/wishlist"
+            className="icon-link"
+          >
 
-                        Signup
+            <FaHeart className="icon"/>
 
-                    </button>
+          </Link>
 
-                    <FaBars className="menu"/>
+          {/* Profile */}
 
-                </div>
+          <Link
+            to="/profile"
+            className="icon-link"
+          >
 
-            </div>
+            <FaUserCircle className="icon"/>
 
-        </header>
+          </Link>
 
-    )
+          {/* Cart */}
 
+          <Link
+            to="/cart"
+            className="cart-link"
+          >
+
+            <FaShoppingCart className="icon"/>
+
+            {cart.length > 0 && (
+
+              <span className="cart-count">
+
+                {cart.length}
+
+              </span>
+
+            )}
+
+          </Link>
+
+          {/* Login */}
+
+          <Link to="/login">
+
+            <button className="login-btn">
+
+              Login
+
+            </button>
+
+          </Link>
+
+          {/* Signup */}
+
+          <Link to="/signup">
+
+            <button className="signup-btn">
+
+              Signup
+
+            </button>
+
+          </Link>
+
+          {/* Mobile Menu */}
+
+          <button
+            className="menu-btn"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+
+            {menuOpen ? <FaTimes /> : <FaBars />}
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+  );
 }
 
 export default Navbar;

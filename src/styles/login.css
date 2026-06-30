@@ -1,0 +1,243 @@
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+.login-page{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+    padding:60px 0;
+    min-height:85vh;
+}
+
+/* ===========================
+   LEFT
+=========================== */
+
+.login-left h1{
+    font-size:52px;
+    color:#222;
+    margin-bottom:15px;
+    line-height:1.2;
+}
+
+.login-left p{
+    color:#666;
+    font-size:18px;
+    margin-bottom:35px;
+    max-width:500px;
+}
+
+.login-left img{
+    width:100%;
+    max-width:550px;
+    height:380px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.login-left img:hover{
+    transform:scale(1.02);
+}
+
+/* ===========================
+   LOGIN CARD
+=========================== */
+
+.login-card{
+    background:#fff;
+    padding:45px;
+    border-radius:28px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.login-card h2{
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:35px;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.input-box{
+    position:relative;
+    margin-bottom:22px;
+}
+
+.input-box input{
+    width:100%;
+    padding:16px 50px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    border-color:#FF6B35;
+    box-shadow:0 0 10px rgba(255,107,53,.25);
+}
+
+.input-icon{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#999;
+    font-size:18px;
+}
+
+.eye-btn{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:#777;
+    font-size:18px;
+}
+
+/* ===========================
+   OPTIONS
+=========================== */
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.login-options label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#555;
+}
+
+.login-options a{
+    color:#FF6B35;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.login-btn-full{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:14px;
+    background:#FF6B35;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom:18px;
+}
+
+.login-btn-full:hover{
+    background:#eb5c27;
+    transform:translateY(-2px);
+}
+
+.google-btn{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    background:#fff;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.google-btn:hover{
+    background:#fafafa;
+    border-color:#FF6B35;
+}
+
+/* ===========================
+   SIGNUP
+=========================== */
+
+.signup-text{
+    text-align:center;
+    margin-top:30px;
+    color:#666;
+}
+
+.signup-text a{
+    margin-left:8px;
+    color:#FF6B35;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.login-page{
+    grid-template-columns:1fr;
+}
+
+.login-left{
+    text-align:center;
+}
+
+.login-left p{
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.login-left img{
+    max-width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.login-card{
+    padding:28px;
+}
+
+.login-left h1{
+    font-size:38px;
+}
+
+.login-card h2{
+    font-size:30px;
+}
+
+.login-options{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+}
+
+}

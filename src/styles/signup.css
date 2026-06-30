@@ -1,0 +1,230 @@
+/* ===========================
+   SIGNUP PAGE
+=========================== */
+
+.signup-page{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+    padding:60px 0;
+    min-height:85vh;
+}
+
+/* ===========================
+   LEFT
+=========================== */
+
+.signup-left h1{
+    font-size:52px;
+    color:#222;
+    margin-bottom:15px;
+    line-height:1.2;
+}
+
+.signup-left p{
+    color:#666;
+    font-size:18px;
+    margin-bottom:35px;
+    max-width:500px;
+}
+
+.signup-left img{
+    width:100%;
+    max-width:550px;
+    height:420px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.signup-left img:hover{
+    transform:scale(1.02);
+}
+
+/* ===========================
+   SIGNUP CARD
+=========================== */
+
+.signup-card{
+    background:#fff;
+    padding:45px;
+    border-radius:28px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.signup-card h2{
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:35px;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.input-box{
+    position:relative;
+    margin-bottom:22px;
+}
+
+.input-box input{
+    width:100%;
+    padding:16px 50px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    border-color:#FF6B35;
+    box-shadow:0 0 10px rgba(255,107,53,.25);
+}
+
+.input-icon{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#999;
+    font-size:18px;
+}
+
+.eye-btn{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:#777;
+    font-size:18px;
+}
+
+/* ===========================
+   TERMS
+=========================== */
+
+.terms{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:25px;
+    color:#555;
+    font-size:15px;
+}
+
+.terms input{
+    width:18px;
+    height:18px;
+    accent-color:#FF6B35;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.signup-btn-full{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:14px;
+    background:#FF6B35;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom:18px;
+}
+
+.signup-btn-full:hover{
+    background:#eb5c27;
+    transform:translateY(-2px);
+}
+
+.google-btn{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.google-btn:hover{
+    border-color:#FF6B35;
+    background:#fafafa;
+}
+
+/* ===========================
+   LOGIN
+=========================== */
+
+.login-text{
+    text-align:center;
+    margin-top:28px;
+    color:#666;
+}
+
+.login-text a{
+    margin-left:8px;
+    color:#FF6B35;
+    font-weight:600;
+    text-decoration:none;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.signup-page{
+grid-template-columns:1fr;
+}
+
+.signup-left{
+text-align:center;
+}
+
+.signup-left p{
+margin:auto;
+margin-bottom:30px;
+}
+
+.signup-left img{
+max-width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.signup-card{
+padding:28px;
+}
+
+.signup-left h1{
+font-size:38px;
+}
+
+.signup-card h2{
+font-size:30px;
+}
+
+}

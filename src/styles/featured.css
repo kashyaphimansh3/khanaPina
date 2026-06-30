@@ -1,0 +1,19 @@
+.featured-section{
+    margin:50px auto;
+}
+
+.section-header{
+    margin-bottom:25px;
+}
+
+.section-header h2{
+    font-size:34px;
+    font-weight:700;
+    color:#222;
+}
+
+.section-header p{
+    margin-top:8px;
+    color:#777;
+    font-size:16px;
+}
