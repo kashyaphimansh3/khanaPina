@@ -3,7 +3,7 @@ import { FaHeart } from "react-icons/fa";
 
 import { useWishlist } from "../../context/WishlistContext";
 
-import "../../styles/restaurantCard.css";
+import "../../styles/restaurantcard.css";
 
 function RestaurantCard({ restaurant }) {
 
